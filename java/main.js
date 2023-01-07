@@ -15,6 +15,6 @@ else (precio == Number); {
         console.log(mensaje)
     }
 
-    sumar (Number(precio+10))
+    sumar (Number(precio*325.74))
     mostrar(resultado);
     alert(resultado)
