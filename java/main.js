@@ -18,4 +18,4 @@ else (precio == Number); {
 
     sumar (Number(precio*325.74))
     mostrar(resultado);
-    alert(resultado)
+    alert(`El total es de $ ${resultado}`)
