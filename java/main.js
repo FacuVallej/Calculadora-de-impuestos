@@ -4,6 +4,7 @@ if (precio == ""){
     alert("por favor, ingresa un precio en dolares")
     while (precio == "") {
         alert("por favor, ingresa un precio en dolares")
+        precio = Number(prompt("¿Cual es el precio en dolares?"))
     }  
 }
 else (precio == Number); {
