@@ -1,21 +1,23 @@
 let precio = Number(prompt("¿Cual es el precio en dolares?"))
 
-if (precio == ""){
+
+
+while (precio == "") {
+
     alert("por favor, ingresa un precio en dolares")
-    while (precio == "") {
-        alert("por favor, ingresa un precio en dolares")
-        precio = Number(prompt("¿Cual es el precio en dolares?"))
-    }  
+
+    precio = Number(prompt("¿Cual es el precio en dolares?"))
+
 }
-else (precio == Number); {
-    function sumar(precio,){
-    resultado = Number(precio)
-    }}
 
-    function mostrar(mensaje){
-        console.log(mensaje)
-    }
+function mostrar(mensaje) {
 
-    sumar (Number(precio*325.74))
-    mostrar(resultado);
-    alert(`El total es de $ ${resultado}`)
+    console.log(mensaje)
+
+}
+
+let resultado = precio * 325.74
+
+mostrar(resultado);
+
+alert(`El total es de $ ${resultado}`)
