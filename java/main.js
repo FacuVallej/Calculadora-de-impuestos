@@ -1,3 +1,4 @@
+//Calculadora de impuestos//
 let precio = Number(prompt("¿Cual es el precio en dolares?"))
 
 
@@ -21,8 +22,24 @@ let resultado = precio * 325.74
 mostrar(resultado);
 
 alert(`El total es de $ ${resultado}`)
+//termina calculadora de impuesto en USD//
+
+//lista sobre nuevas monedas para agregar//
+const listaMonendas = [];
+let   cantidad     = 1;
+do{
+   let entrada = prompt("¿Que moneda te gustaria que agreguemos?, en caso de que tu respuesta sea nula, por favor apretar cancelar");
+   listaMonendas.push(entrada.toUpperCase());
+   console.log(listaMonendas.length);
+}while(listaMonendas.length != cantidad)
+const nuevaLista = listaMonendas.concat(["Dolar","Euro","Real"]);
+alert(nuevaLista.join("\n"));
+console.log(nuevaLista)
+//termina lista//
 
 
+
+//diferentes monedas con sus valores en consola//
 function Monedas (nombre, valor, subio){
  this.nombre = nombre;
  this.valor = valor;
